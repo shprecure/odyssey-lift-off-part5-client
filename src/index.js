@@ -1,11 +1,11 @@
+import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
 import React from "react";
 import ReactDOM from "react-dom";
-import GlobalStyles from "./styles";
 import Pages from "./pages";
-import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
+import GlobalStyles from "./styles";
 
 const client = new ApolloClient({
-  uri: "https://space-courses-api.herokuapp.com/", // change to YOUR own production server
+  uri: "https://odyssey-lift-off-part5-server-production-ee16.up.railway.app/",
   cache: new InMemoryCache(),
   name: "web",
   version: "1.0",
